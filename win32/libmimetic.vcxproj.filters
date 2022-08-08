@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{92db82aa-d93a-4455-8d30-3e04fcc3ba5e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\OS">
+      <UniqueIdentifier>{3d4badfd-29ea-46b2-94f2-6c06e1ed4e1d}</UniqueIdentifier>
+      <Extensions>.cxx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\rfc822">
+      <UniqueIdentifier>{4c65de82-39b5-4a4c-bf21-f2bce9760e30}</UniqueIdentifier>
+      <Extensions>.cxx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\codec">
+      <UniqueIdentifier>{0f9577a6-63e1-49b5-b0e4-e77f42c34a04}</UniqueIdentifier>
+      <Extensions>.cxx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{13020069-9d80-460c-b38c-288629ac617d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\OS-inc">
+      <UniqueIdentifier>{3629941a-5523-432a-92ac-00bc21800a69}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\rfc822-inc">
+      <UniqueIdentifier>{6d14e43a-e33e-48f6-9aa7-d7ac7f6b144b}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\codec-inc">
+      <UniqueIdentifier>{80294c3c-b86c-462e-91b5-a79e440942cd}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\mimetic\body.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\contentdescription.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\contentdisposition.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\contentid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\contenttransferencoding.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\contenttype.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\fieldparam.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\header.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\message.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\mimeentity.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\mimeversion.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\strutils.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\utils.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\version.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\os\file_iterator.cxx">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\os\fileop.cxx">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\os\stdfile.cxx">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\os\utils.cxx">
+      <Filter>Source Files\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\address.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\addresslist.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\datetime.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\field.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\fieldvalue.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\group.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\header.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\mailbox.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\mailboxlist.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\message.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\rfc822\messageid.cxx">
+      <Filter>Source Files\rfc822</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\codec\base64.cxx">
+      <Filter>Source Files\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mimetic\codec\qp.cxx">
+      <Filter>Source Files\codec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\mimetic\body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\circular_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\config_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\contentdescription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\contentdisposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\contentid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\contenttransferencoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\contenttype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\fieldparam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\parser\itparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\libconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\mimeentity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\mimeentitylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\mimetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\mimeversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\streambufs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\strutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\directory.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\file.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\file_iterator.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\fileop.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\mmfile.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\os.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\stdfile.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\os\utils.h">
+      <Filter>Header Files\OS-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\address.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\addresslist.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\body.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\datetime.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\field.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\fieldvalue.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\group.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\header.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\mailbox.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\mailboxlist.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\message.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\messageid.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\rfc822\rfc822.h">
+      <Filter>Header Files\rfc822-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\base64.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\code.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\codec.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\codec_base.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\codec_chain.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\other_codecs.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mimetic\codec\qp.h">
+      <Filter>Header Files\codec-inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
