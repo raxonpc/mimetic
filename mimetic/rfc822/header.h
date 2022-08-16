@@ -33,15 +33,6 @@ namespace mimetic
 class Rfc822Header: public std::deque<Field>
 {
 public:
-    struct find_by_name: 
-        public std::unary_function<const Field, bool>
-    {
-        find_by_name(const std::string&);
-        bool operator()(const Field&) const;
-    private:
-        const istring m_name;
-    };
-
     bool hasField(const std::string&) const;
     
     const Field& field(const std::string&) const;
@@ -93,7 +84,7 @@ template<typename T>
 const T& Rfc822Header::getField(const std::string& name) const
 {
     const_iterator it;
-    it = find_if(begin(), end(), find_by_name(name));
+    it = find_if(begin(), end(), [&name](const Field& f){return name == f.name();});
     if(it != end())
     {
         // cast away constness
@@ -117,7 +108,7 @@ template<typename T>
 T& Rfc822Header::getField(const std::string& name)
 {    
     iterator it;
-    it = find_if(begin(), end(), find_by_name(name));
+    it = find_if(begin(), end(), [&name](const Field& f){return name == f.name();});
     if(it != end())
     {
         FieldValue* pFv = it->m_pValue;
@@ -155,7 +146,7 @@ void Rfc822Header::setField(const std::string& name, const T& obj)
 {
     // remove if already exists
     iterator bit = begin(), eit = end();
-    iterator found = find_if(bit, eit, find_by_name(name));
+    iterator found = find_if(bit, eit, [&name](const Field& f){return name == f.name();});
     if(found != eit)
         erase(found);
     // add field

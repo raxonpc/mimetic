@@ -16,7 +16,7 @@ namespace mimetic
 {
 
 template<typename value_type>
-struct IsDelim: public std::unary_function<value_type,bool>
+struct IsDelim
 {
     bool operator()(const value_type& val) const
     {
@@ -49,7 +49,7 @@ private:
 };
 
 template<>
-struct IsDelim<char>: public std::unary_function<char, bool>
+struct IsDelim<char>
 {
     void setDelimList(const std::string& delims)
     {
@@ -102,7 +102,7 @@ public:
         dst.erase(dst.begin(), dst.end());
         if(m_tok_eit == m_eit)
             return false;
-        m_tok_eit = std::find_if(m_bit, m_eit, m_delimPred);
+        m_tok_eit = std::find_if(m_bit, m_eit, [this](auto &value){return m_delimPred(value);});
         m_matched = 0; // end of input
         if(m_tok_eit != m_eit)
             m_matched = *m_tok_eit; // matched delimiter
