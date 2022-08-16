@@ -11,17 +11,6 @@
 namespace mimetic
 {
 using namespace std;
-    
-// find_by_name
-Rfc822Header::find_by_name::find_by_name(const std::string& name)
-: m_name(name)
-{
-}
-
-bool Rfc822Header::find_by_name::operator()(const Field& f) const
-{    
-    return m_name == f.name();        
-}
 
 #if 0
 // Rfc822Header
@@ -39,7 +28,7 @@ Rfc822Header::~Rfc822Header()
 bool Rfc822Header::hasField(const string& name) const
 {
     const_iterator it;
-    it = find_if(begin(),end(), find_by_name(name));
+    it = find_if(begin(),end(), [&name](const Field& f){return name == f.name();});
     return it != end();
 }
 
@@ -47,7 +36,7 @@ bool Rfc822Header::hasField(const string& name) const
 const Field& Rfc822Header::field(const std::string& name) const
 {
     const_iterator it;
-    it = find_if(begin(),end(), find_by_name(name));
+    it = find_if(begin(),end(), [&name](const Field& f){return name == f.name();});
     if(it != end())
         return *it;
     else
@@ -57,7 +46,7 @@ const Field& Rfc822Header::field(const std::string& name) const
 Field& Rfc822Header::field(const std::string& name)
 {
     iterator it;
-    it = find_if(begin(),end(), find_by_name(name));
+    it = find_if(begin(),end(), [&name](const Field& f){return name == f.name();});
     if(it != end())
         return *it;
     else {
