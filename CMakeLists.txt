@@ -27,7 +27,7 @@ add_library(mimetic SHARED
         mimetic/os/file_iterator.h
         mimetic/os/fileop.cxx
         mimetic/os/fileop.h
-        mimetic/os/mmfile.cxx
+#        mimetic/os/mmfile.cxx
         mimetic/os/mmfile.h
         mimetic/os/os.h
         mimetic/os/stdfile.cxx
@@ -35,7 +35,7 @@ add_library(mimetic SHARED
         mimetic/os/utils.cxx
         mimetic/os/utils.h
         mimetic/parser/itparser.h
-        mimetic/parser/itparserdecl.h
+#        mimetic/parser/itparserdecl.h
         mimetic/rfc822/address.cxx
         mimetic/rfc822/address.h
         mimetic/rfc822/addresslist.cxx
